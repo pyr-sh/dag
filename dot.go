@@ -210,7 +210,7 @@ func (g *marshalGraph) writeBody(opts *DotOpts, w *indentWriter) {
 		dotEdges = append(dotEdges, e.dot(g))
 	}
 
-	// srot these again to match the old output
+	// sort these again to match the old output
 	sort.Strings(dotEdges)
 
 	for _, e := range dotEdges {
